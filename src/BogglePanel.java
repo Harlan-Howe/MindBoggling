@@ -159,7 +159,7 @@ public class BogglePanel extends JPanel implements ActionListener, KeyListener
     /**
      * helper method to see whether this word is found in our dictionary
      * @param target -the word to consider.
-     * @return - wether the word was found in the dictionary or not
+     * @return - whether the word was found in the dictionary or not
      */
     public boolean isAWord(String target)
     {
@@ -171,7 +171,7 @@ public class BogglePanel extends JPanel implements ActionListener, KeyListener
     /**
      * recursive method performing binary search for word in the dictionary in memory
      * @param target - word to find (all lower case, to match our dictionary)
-     * @param start - index of the begining index of range of dictionary to consider.
+     * @param start - index of the beginning index of range of dictionary to consider.
      * @param end - index of the end index (inclusive) of range of dictionary to consider
      * @return - whether the word was found or not.
      */
@@ -305,7 +305,7 @@ public class BogglePanel extends JPanel implements ActionListener, KeyListener
     @Override
     public void keyTyped(KeyEvent e)
     {
-        ;  // ignoring this - we need to have this method to implemnent keylistener, but we aren't using it.
+        // ignoring this - we need to have this method to implement KeyListener, but we aren't using it.
     }
 
     /**
@@ -333,7 +333,7 @@ public class BogglePanel extends JPanel implements ActionListener, KeyListener
     @Override
     public void keyReleased(KeyEvent e)
     {
-        ;  // ignoring this - we need to have this method to implemnent keylistener, but we aren't using it.
+        // ignoring this - we need to have this method to implement KeyListener, but we aren't using it.
     }
 
 
