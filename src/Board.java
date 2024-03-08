@@ -94,13 +94,13 @@ public class Board
      *
      *  Let's consider all eight neighbors of (1,1) for this situation:
      *  • (0,0) - This letter U doesn't match the "O" we're looking for. Skip.
-     *  • (0,1) - This letter O matches the "O," and it has not been used. We might recurse on this one.
+     *  • (0,1) - This letter O matches the "O," and it has not been used. This is a candidate for recursion.
      *  • (0,2) - This letter U doesn't match the "O" we're looking for. Skip.
      *  • (1,0) - This letter O matches the "O" we're looking for, but used[1][0] is true. Skip.
      *  • (1,2) - This letter R doesn't match the "O" we're looking for. Skip.
      *  • (2,0) - This letter C doesn't match (and it's used, anyway.) Skip.
      *  • (2,1) - This letter Z doesn't match the "O" we're looking for. Skip.
-     *  • (2,2) - This letter O matches the "O," and it has not been used. We might recurse on this one.
+     *  • (2,2) - This letter O matches the "O," and it has not been used. This is a candidate for recursion.
      *
      * @param s - the string (all uppercase, in its entirety) that we are looking for
      * @param index - the index in the string where we are starting to look in this recursion
